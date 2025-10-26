@@ -1,0 +1,187 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(145deg, #e0e7ff, #cfd9ff); /* professional yet contrasting gradient */
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: #1a1f36; /* deep professional dark tone */
+  padding: 15px 20px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #6c63ff;
+  text-decoration: underline;
+}
+
+/* Homepage Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6c63ff, #0d6efd); /* attention-grabbing professional gradient */
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #e0e0ff;
+}
+
+.hero .btn {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1a1f36;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline-light {
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+  background-color: transparent;
+}
+
+.btn-outline-light:hover {
+  background-color: #6c63ff;
+  color: #fff;
+  transform: scale(1.05);
+  border-color: #6c63ff;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6c63ff, #0d6efd);
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #0d6efd, #6c63ff);
+  transform: scale(1.05);
+}
+
+/* Tables */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: 20px;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #6c63ff, #0d6efd) !important;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.table thead th {
+  border: none;
+}
+
+.table tbody tr {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f5ff;
+  transform: translateX(5px);
+}
+
+/* Inputs & Forms */
+input, select, textarea {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 12px rgba(108,99,255,0.2);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background: #1a1f36;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-radius: 15px 15px 0 0;
+  font-weight: 500;
+}

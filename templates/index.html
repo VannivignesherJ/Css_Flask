@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Inventory{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="hero text-center mb-5">
+  <h1>Welcome to Inventory System</h1>
+  <p>Manage your inventory efficiently</p>
+  <a href="/add_product" class="btn btn-primary">Add Product</a>
+</div>
+
+<!-- Stats Cards -->
+<div class="row g-4 mb-5">
+  <div class="col-md-4">
+    <div class="card stat-card">
+      <h3>Total Products</h3>
+      <p class="stat-number">{{ total_products }}</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card stat-card">
+      <h3>Total Locations</h3>
+      <p class="stat-number">{{ total_locations }}</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card stat-card">
+      <h3>Total Movements</h3>
+      <p class="stat-number">{{ total_movements }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Recent Products -->
+<div class="card p-4 mb-5">
+  <h3 class="mb-4">Recently Added Products</h3>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in products %}
+      <tr>
+        <td>{{ p.product_id }}</td>
+        <td>{{ p.name }}</td>
+        <td>{{ p.description }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- Recent Movements -->
+<div class="card p-4 mb-5">
+  <h3 class="mb-4">Recent Movements</h3>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>From Location</th>
+        <th>To Location</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for m in movements %}
+      <tr>
+        <td>{{ m.product_name }}</td>
+        <td>{{ m.from_location }}</td>
+        <td>{{ m.to_location }}</td>
+        <td>{{ m.qty }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- Locations -->
+<div class="card p-4 mb-5">
+  <h3 class="mb-4">Locations</h3>
+  <ul class="list-group">
+    {% for loc in locations %}
+    <li class="list-group-item">{{ loc.name }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}
