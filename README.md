@@ -8,15 +8,15 @@ Features
  3)Record and track stock movements
  4)Dashboard view for total products and stock summary
  5)User-friendly interface with clean UI and responsive design
- 6)Data stored using a backend database (e.g., SQLite / MySQL)
+ 6)Data stored using a backend database (MySQL)
 
  Tech Stack
 
 Category	Technology
 
-Frontend	HTML, CSS, JavaScript, Bootstrap
+Frontend	HTML, CSs
 Backend	Python (Flask)
-Database	SQLite / MySQL
+Database	: MySQL
 Version Control	Git & GitHub
 
 
